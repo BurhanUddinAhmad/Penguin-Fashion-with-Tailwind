@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind css</title>
+    <title>Penguine Fashion wit TailwindCSS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
     <style>
         .font-bebas {
@@ -20,11 +20,30 @@
             font-family: 'Roboto', sans-serif;
         }
     </style>
+
 </head>
 <body>
-    <header class="bg-[#FFFBF0]">
+    <header class="bg-[#FFFBF0] pb-10 pt-5">
         <!-- navbar -->
-        <nav></nav>
+        <nav class="w-3/4 mx-auto flex flex-row justify-between items-center mb-5 gap-7">
+           <!-- Logo  -->
+            <div class="w-56">
+                <img src="./icons/logo.png" alt="">
+            </div>
+            <!-- Bar Icon for responsive -->
+            <div class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>                  
+            </div>
+            <!-- Nav link  -->
+            <ul class="space-x-5 hidden md:flex ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
         <!-- Hero section  -->
         <div class="w-3/4 max-w-6xl mx-auto flex flex-col gap-5 md:flex-row justify-between items-center">
            <div class="space-y-3">
@@ -157,7 +176,7 @@
             <div class="w-3/4 mx-auto flex flex-col md:flex-row justify-between gap-10">
                 <!-- Left content  -->
                 <div class="md:w-1/2 order-1 md:pr-20">
-                    <div class="flex items-center space-x-3 shadow-md p-5 rounded-md">
+                    <div class="flex items-center space-x-3 shadow-md p-5 rounded-md hover:drop-shadow-xl">
                         <div class="w-12"> <img class="w-full" src="./icons/house.png" alt=""></div>
                         <div>
                             <h3 class="font-roboto text-[#363958] text-xl font-bold">Find the Perfect Fit</h3>
@@ -165,7 +184,7 @@
                                 offer styles for every body.</p>
                         </div>
                     </div>
-                    <div class="flex items-center space-x-3 shadow-md p-5 rounded-md">
+                    <div class="flex items-center space-x-3 shadow-md p-5 rounded-md hover:drop-shadow-xl">
                         <div class="w-12"> <img class="w-full" src="./icons/box.png" alt=""></div>
                         <div>
                             <h3 class="font-roboto text-[#363958] text-xl font-bold">Free Exchanges</h3>
@@ -173,7 +192,7 @@
                                 offer styles for every body.</p>
                         </div>
                     </div>
-                    <div class="flex items-center space-x-3 shadow-md p-5 rounded-md">
+                    <div class="flex items-center space-x-3 shadow-md p-5 rounded-md hover:drop-shadow-xl">
                         <div class="w-12"> <img class="w-full" src="./icons/question.png" alt=""></div>
                         <div>
                             <h3 class="font-roboto text-[#363958] text-xl font-bold">Contact Our Seller</h3>
